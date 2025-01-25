@@ -3,9 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ekkaa - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Ekkaaaaaa</h1>
+    <nav class="navbar" id="navbar">
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="contact-info">
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <span>Query.ekkaa@gmail.com</span>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <span>+91-9138953303 | 8527197251</span>
+            </div>
+        </div>
+        
+        <div class="logo">
+            <h1>Ekkaa</h1>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li>
+                <a href="#about">
+                    <i class="fas fa-building"></i>
+                    <span>About Ekkaa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#products">
+                    <i class="fas fa-tv"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="#services">
+                    <i class="fas fa-cogs"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a href="#careers">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Careers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#ewaste">
+                    <i class="fas fa-recycle"></i>
+                    <span>E-waste</span>
+                </a>
+            </li>
+            <li>
+                <a href="#news">
+                    <i class="far fa-newspaper"></i>
+                    <span>News Center</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="content">
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-slide active">
+                        <img src="https://source.unsplash.com/1600x900/?technology" alt="Technology">
+                        <div class="carousel-content">
+                            <h2>Welcome to Ekkaa</h2>
+                            <p>Innovating for a better tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://source.unsplash.com/1600x900/?business" alt="Business">
+                        <div class="carousel-content">
+                            <h2>Leading Innovation</h2>
+                            <p>Creating sustainable solutions</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://source.unsplash.com/1600x900/?electronics" alt="Electronics">
+                        <div class="carousel-content">
+                            <h2>Future Technology</h2>
+                            <p>Shaping the digital world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://ekkaa.com/wp-content/uploads/2023/11/about-ekkaa.jpg" alt="Electronics Manufacturing">
+                </div>
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>About Us</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="about-text">
+                        <p class="highlight-text">At Ekkaa Electronics, we have a passion for 'Innovation' that syncs with the best quality to manufacture LED TVs & accessories as OEM/ODM to leading brands in the consumer electronics industry in India.</p>
+                        
+                        <p>As an organisation our workforce is fuelled by creativity and good work ethics, one that does not just scratch the surface, but is engraved in our DNA, hence reliability is our second name and we are valued by our partners.</p>
+                        
+                        <p class="year-text">That's why we have been around since <span class="year">2023</span></p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Products</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Partners</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-container">
+                <div class="section-header">
+                    <h2>Our Products</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="products-content">
+                    <h3>Smart TV's that offer a world of newer possibilities</h3>
+                    <p>Televisions were once known as 'Idiot Boxes' & ever since the word 'Smart' became a prefix to TV, televisions became a multi-functional device one that offers convenience for you to navigate between streaming services, interact via social media apps & play games. Adding to that they also enable you to transform your living space into a home theatre, where you can view your most loved motion picture with unrivalled sound and video quality. Now, if you happen to search for your next Smart TV, with the best quality LED TV and a whole lot of modern day features, then you have landed safely at Ekka Electronics.</p>
+                </div>
+
+                <div class="products-carousel">
+                    <button class="carousel-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="products-slider">
+                        <div class="product-card">
+                            <img src="assests/Home-page-product-banners_28inch.png" alt="Smart TV Model 1">
+                        </div>
+                        <div class="product-card">
+                            <img src="assests/Home-page-product-banners_32inch.png" alt="Smart TV Model 2">
+                        </div>
+                        <div class="product-card">
+                            <img src="assests/Home-page-product-banners_43inch.png" alt="Smart TV Model 3">
+                        </div>
+                        <div class="product-card">
+                            <img src="assests/Home-page-product-banners_50inch.png" alt="Smart TV Model 4">
+                        </div>
+                        <div class="product-card">
+                            <img src="assests/Home-page-product-banners_55inch.png" alt="Smart TV Model 4">
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
 </body>
 </html>
