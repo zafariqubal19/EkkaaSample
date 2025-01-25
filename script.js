@@ -154,8 +154,41 @@ function initProductsCarousel() {
     });
 }
 
-// Update the DOMContentLoaded event listener
+// Add this to your existing script.js
+function initValueCards() {
+    const cards = document.querySelectorAll('.value-card');
+    
+    cards.forEach(card => {
+        const contentWrapper = card.querySelector('.value-card-back');
+        const content = contentWrapper.querySelector('p');
+        
+        // Check if content overflows
+        if (content.scrollHeight > content.clientHeight) {
+            // Create read more button only if content overflows
+            const readMore = document.createElement('span');
+            readMore.classList.add('read-more');
+            readMore.textContent = 'read more...';
+            contentWrapper.appendChild(readMore);
+
+            // Add click handler to read more
+            readMore.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent card flip
+                card.classList.add('expanded');
+            });
+
+            // Click outside to collapse
+            document.addEventListener('click', (e) => {
+                if (!card.contains(e.target) && card.classList.contains('expanded')) {
+                    card.classList.remove('expanded');
+                }
+            });
+        }
+    });
+}
+
+// Update your DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', () => {
     initCarousel();
     initProductsCarousel();
+    initValueCards();
 }); 
